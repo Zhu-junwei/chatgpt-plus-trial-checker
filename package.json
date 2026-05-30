@@ -6,12 +6,17 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "check": "node --check server.js"
+    "check": "node --check server.js",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
     "undici": "^6.26.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.95.0"
   }
 }
