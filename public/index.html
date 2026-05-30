@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Plus 试用检测</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <div class="title-block">
+          <h1>ChatGPT Plus 试用检测</h1>
+          <a href="https://chatgpt.com/api/auth/session" target="_blank" rel="noreferrer">https://chatgpt.com/api/auth/session</a>
+        </div>
+        <span id="badge" class="badge idle">待检测</span>
+      </header>
+
+      <section class="panel">
+        <label>
+          <span>Access Token 或 Session JSON</span>
+          <textarea id="tokenInput" spellcheck="false" placeholder="可以粘贴 accessToken，也可以粘贴 https://chatgpt.com/api/auth/session 返回的完整 JSON"></textarea>
+        </label>
+
+        <div class="actions">
+          <button id="checkButton" type="button">检测账号</button>
+        </div>
+      </section>
+
+      <section id="result" class="result empty" aria-live="polite" hidden></section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
